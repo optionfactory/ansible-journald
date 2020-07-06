@@ -4,7 +4,7 @@
     dest: "/var/log/journal"
     state: directory
     owner: root
-    mode: 0700
+    mode: 0755
   notify: "restart journald"
 - name: allow 1000 messages per second on journald
   lineinfile:
